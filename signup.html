@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='https://icons-for-free.com/iconfiles/png/128/rocket-131994889329020493.png' type='image/x-icon'/ >
+    <title>Project Rocket- Sign Up</title>
+    <link href="assets\css\reset.css" type="text/css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-2kOE+STGAkgemIkUbGtoZ8dJLqfvJ/xzRnimSkQN7viOfwRvWseF7lqcuNXmjwrL" crossorigin="anonymous">
+    <link href="assets\css\signup.css" type="text/css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-0">
+        <a class="navbar-brand" href="index.html"><img src="https://icons-for-free.com/iconfiles/png/128/rocket-131994889329020493.png" width="30" height="30" alt="">ProjectRocket</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">My Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="account.html">Profile</a>
+                            <a class="dropdown-item" href="account.html">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="account.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="nav inline my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signup.html" target="_blank" rel="noopener" rel="noreferrer">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" target="_blank" rel="noopener" rel="noreferrer">Log In</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+            <div class="header-title">
+                <h1 class="wv-heading--title">Open a free account!</h1>
+                <h2 class="wv-heading--subtitle">
+                    Sign up today to start building your school projects!</h2>
+            </div>
+            </div>
+        </div>
+
+<!-- where signup form begins -->
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+            <div class="myform form ">
+                <form action="" method="post" name="login">
+                    <div class="form-group">
+                        <input type="text" name="username"  class="form-control my-input" id="name-input" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email"  class="form-control my-input" id="email-input" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" min="0" name="password" id="password-input"  class="form-control my-input" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" min="0" name="password2" id="password2-input"  class="form-control my-input" placeholder="Password2">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class=" btn btn-block send-button tx-tfm" id="new-user">Create Your Free Account</button>
+                    </div>
+                    <div class="col-md-12 ">
+                    <div class="login-or">
+                        <hr class="hr-or">
+                            <span class="span-or">or</span>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <a class="btn btn-block g-button" href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">
+                        <i class="fa fa-google"></i> Sign up with Google</a>
+                    </div>
+                        <p class="small mt-3">By signing up, you are indicating that you have read and agree to the <a href="#" class="ps-hero__content__link">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                        </p>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<br>
+<br>
+<br>
+
+    <footer class="mt-5 mb-5">
+    <nav class="text-center mt-5">
+        <a class="navbar-brand" href="index.html"><img src="https://icons-for-free.com/iconfiles/png/128/rocket-131994889329020493.png" width="30" height="30" alt="">ProjectRocket &copy;</a>
+    </nav>
+    <br>
+    <br>
+    </footer>
+
+
+
+<script>
+
+$('#new-user').on("click", function(event) {
+      // prevent page from refreshing when form tries to submit itself
+    event.preventDefault();
+
+      // Capture user inputs and store them into variables
+    var name = $("#name-input").val().trim();
+    var email = $("#email-input").val().trim();
+    var password = $("#password-input").val().trim();
+    var password2 = $("#password2-input").val().trim();
+
+      // Console log each of the user inputs to confirm we are receiving them
+    console.log(name);
+    console.log(email);
+    console.log(password);
+    console.log(password2);
+
+      // Replaces the content in the "recent-member" div with the new info
+    $("#name-display").text(name);
+    $("#email-display").text(email);
+    $("#password-display").text(password);
+    $("#password2-display").text(password2);
+
+      // Clear localStorage
+    localStorage.clear();
+
+      // Store all content into localStorage
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+    localStorage.setItem("password2", password2);
+    });
+
+    // // By default display the content from localStorage
+    // $("#name-display").text(localStorage.getItem("name"));
+    // $("#email-display").text(localStorage.getItem("email"));
+    // $("#password-display").text(localStorage.getItem("password"));
+    // $("#password2-display").text(localStorage.getItem("password2"));
+</script>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootlint/1.0.0/bootlint.min.js" integrity="sha384-N+BTm0BCfumqkjdZt552I0kBBcMzkYe8aWUaSqL13fGJEGVhOi0rljWKtlU6sC6Z" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+</body>
+</html>

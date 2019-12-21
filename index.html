@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='https://icons-for-free.com/iconfiles/png/128/rocket-131994889329020493.png' type='image/x-icon'/ >
+    <link href="assets\css\reset.css" type="text/css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-2kOE+STGAkgemIkUbGtoZ8dJLqfvJ/xzRnimSkQN7viOfwRvWseF7lqcuNXmjwrL" crossorigin="anonymous">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="assets\css\style.css" type="text/css" rel="stylesheet">
+    <title>Project Rocket</title>
+</head>
+<body>
+<!-- this is navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-0">
+        <a class="navbar-brand" href="index.html"><img src="https://icons-for-free.com/iconfiles/png/128/rocket-131994889329020493.png" width="30" height="30" alt="">ProjectRocket</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">My Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="account.html">Profile</a>
+                            <a class="dropdown-item" href="account.html">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="account.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="nav inline my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signup.html" target="_blank" rel="noopener" rel="noreferrer">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" target="_blank" rel="noopener" rel="noreferrer">Log In</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+<!-- this is carousel section -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+                <img src="assets\images\background.jpg" class="d-block w-100" alt="Project Rocket">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="assets\images\jumbotron1.png" class="d-block w-100" alt="Project Rocket">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <div class="alert alert-info border-0 rounded-0 text-center mb-5" role="alert">
+            <h3>PROJECTROCKET: <em>a source designed for young minds </em></h3>
+    </div>
+
+
+<!-- this is how to use app section -->
+    <div class="container mt-5 mb-5">
+        <h2>How to Use the App</h2>
+        <div class="row">
+            <div class="col bg-info border border-white rounded-sm p-2 m-2">
+                <h3>Step 1</h3>
+                <p>Search your topic through Wikipedia, Britannica, Dictionary & Giphy </p>
+            </div>
+            <div class="col bg-warning border border-white rounded-sm p-2 m-2">
+                <h3>Step 2</h3>
+                <p>Put your researched content together in the Text Editor</p>
+            </div>
+            <div class="col bg-danger border border-white rounded-sm p-2 m-2">
+                <h3>Step 3</h3>
+                <p>Save your work & print!</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- this is dictionary & britannica section --> 
+    <div class="container">
+        <div class="row">
+            <div class="col d-inline text-center">
+                    <div class="card">
+                        <img src="https://www.rd.com/wp-content/uploads/2017/09/This-Is-How-Dictionary-Editors-Prank-Each-other-392723320-Castleski-1024x683.jpg" class="card-img-top rounded-0" alt="dictionary image">
+                        <div class="card-body">
+                            <h5 class="card-title">DICTIONARY</h5>
+                                <p class="card-text">Type in a word to get its definition!</p>
+                                <form action='https://dictionary.cambridge.org/us/search/british/direct/?utm_source=widget_searchbox_source&utm_medium=widget_searchbox&utm_campaign=widget_tracking' target="_blank" rel="noopener" rel="noreferrer" method='post'>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="firstTd">
+                                                <a href='https://dictionary.cambridge.org/us/' id="dictionlink"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="secondTd">
+                                                <input id="typeSearchWord" name='q'/>
+                                            </td>
+                                            <td id="thirdTd">
+                                                <input id="searchButton" type='submit' value='Search'/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </form>
+                        </div>
+                    </div>
+                <div class="col d-inline text-center">
+                    <div class="card">
+                    <img src="https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fwww.blogcdn.com%2Fwww.engadget.com%2Fmedia%2F2012%2F03%2Fency.jpg&client=amp-blogside-v2&signature=5c112f3ce3ef5a66b2197ea5c2f9faaa7a2c5c19" class="card-img-top" alt="britannica logo">
+                        <div class="card-body">
+                            <h5 class="card-title">ENCYCLOPEDIA</h5>
+                            <p class="card-text">Search through Britannica for more information!</p>
+                            <iframe src='https://academic.eb.com/levels/collegiate/searchbox' id="searchbox" style="width:100%; height:80px;" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+
+<!-- this is wikipedia section -->
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col border border-dark bg-light rounded-sm mt-5">
+                <div id="wikipedia">
+                    <h2>WIKIPEDIA</h2>
+
+                    <div class="col">
+                        <header class="searchForm-container">
+                        <img src="https://image.ibb.co/e6vOFQ/wikipedia.png" alt="Wikipedia Logo">
+                            <form class="searchForm">
+                                <input type="search" class="searchForm-input">
+                                <button id="wikiButton" type="submit" class="icon searchIcon">
+                                    <img src="https://image.ibb.co/cpG8zk/search.png" alt="Magnifying Glass Icon">
+                                </button>
+                                <a href="https://www.wikipedia.org/w/api.php" target="_blank" rel="noopener" class="icon randomIcon"></a>
+                            </form>
+                        </header>
+                    <section class="searchResults" id="wikiResults"></section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- this is giphy section -->
+    <div class="container">
+            <div class="row">
+                <div class="col border border-dark bg-light rounded-sm mt-5">
+                    <div id="giphy">
+                        <h2>GIPHY</h2>
+
+                        <div class="col">
+                            <header class="searchForm-container">
+                            <img src="https://www.logolynx.com/images/logolynx/e2/e2861b0bf040ce1f178da0530afce9ed.png" alt="Giphy Logo" class="small">
+                                <form class="searchForm">
+                                    <input type="search" class="searchForm-input" id="searchInput">
+                                    <button id="giphyButton" type="submit" class="icon searchIcon">
+                                        <img src="https://image.ibb.co/cpG8zk/search.png" alt="Magnifying Glass Icon">
+                                    </button>
+                                    <a href="https://api.giphy.com/v1/gifs/search?q=dog&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&&limit=10 target="_blank" rel="noopener" class="icon randomIcon"></a>
+                                </form>
+                            </header>
+                        <section class="searchResults" id="giphyResults"></section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- this is editor section -->
+    <div class="container  mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>TEXT EDITOR</h2>
+                <div id="editor" class="bg-light">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <footer class="mt-5 mb-5">
+        <nav class="text-center mt-5">
+                <a class="navbar-brand" href="index.html"><img src="https://icons-for-free.com/iconfiles/png/128/rocket-131994889329020493.png" width="30" height="30" alt="">ProjectRocket &copy;</a>
+        </nav>
+        <br>
+        <br>
+    </footer>
+
+
+
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <!-- Initialize Quill editor -->
+    <script>
+    var quill = new Quill('#editor', {
+    theme: 'snow'
+    });
+    </script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyAr6V8c4x00JMu4pIuiVa9l-wL7-VCapmE",
+    authDomain: "projectrocket-262520.firebaseapp.com",
+    databaseURL: "https://projectrocket-262520.firebaseio.com",
+    projectId: "projectrocket-262520",
+    storageBucket: "projectrocket-262520.appspot.com",
+    messagingSenderId: "358447934378",
+    appId: "1:358447934378:web:6ed00fdb0a7739c35599d3",
+    measurementId: "G-JXEK2W0WTC"
+};
+  // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+</script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootlint/1.0.0/bootlint.min.js" integrity="sha384-N+BTm0BCfumqkjdZt552I0kBBcMzkYe8aWUaSqL13fGJEGVhOi0rljWKtlU6sC6Z" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="assets\javascript\wiki.js" type="text/javascript"></script>
+    <script src="assets\javascript\giphy.js" type="text/javascript"></script>
+    <script src="assets\javascript\app.js" type="text/javascript"></script>
+</body>
+</html>
