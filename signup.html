@@ -81,7 +81,7 @@
                         <input type="password" min="0" name="password2" id="password2-input"  class="form-control my-input" placeholder="Password2">
                     </div>
                     <div class="text-center">
-                        <button type="submit" class=" btn btn-block send-button tx-tfm" id="new-user">Create Your Free Account</button>
+                        <button type="submit"  class=" btn btn-block send-button tx-tfm" id="new-user">Create Your Free Account</button>
                     </div>
                     <div class="col-md-12 ">
                     <div class="login-or">
@@ -116,57 +116,22 @@
 
 
 
-<script>
-
-$('#new-user').on("click", function(event) {
-      // prevent page from refreshing when form tries to submit itself
-    event.preventDefault();
-
-      // Capture user inputs and store them into variables
-    var name = $("#name-input").val().trim();
-    var email = $("#email-input").val().trim();
-    var password = $("#password-input").val().trim();
-    var password2 = $("#password2-input").val().trim();
-
-      // Console log each of the user inputs to confirm we are receiving them
-    console.log(name);
-    console.log(email);
-    console.log(password);
-    console.log(password2);
-
-      // Replaces the content in the "recent-member" div with the new info
-    $("#name-display").text(name);
-    $("#email-display").text(email);
-    $("#password-display").text(password);
-    $("#password2-display").text(password2);
-
-      // Clear localStorage
-    localStorage.clear();
-
-      // Store all content into localStorage
-    localStorage.setItem("name", name);
-    localStorage.setItem("email", email);
-    localStorage.setItem("password", password);
-    localStorage.setItem("password2", password2);
-    });
-
-    // // By default display the content from localStorage
-    // $("#name-display").text(localStorage.getItem("name"));
-    // $("#email-display").text(localStorage.getItem("email"));
-    // $("#password-display").text(localStorage.getItem("password"));
-    // $("#password2-display").text(localStorage.getItem("password2"));
-</script>
 
 
 
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootlint/1.0.0/bootlint.min.js" integrity="sha384-N+BTm0BCfumqkjdZt552I0kBBcMzkYe8aWUaSqL13fGJEGVhOi0rljWKtlU6sC6Z" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootlint/1.0.0/bootlint.min.js" integrity="sha384-N+BTm0BCfumqkjdZt552I0kBBcMzkYe8aWUaSqL13fGJEGVhOi0rljWKtlU6sC6Z" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="assets\javascript\wiki.js" type="text/javascript"></script>
+    <script src="assets\javascript\giphy.js" type="text/javascript"></script>
+    <script src="assets\javascript\app.js" type="text/javascript"></script>
 
 </body>
 </html>
