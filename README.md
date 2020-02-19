@@ -7,4 +7,4 @@ Link:https://chloec222.github.io/Project-Rocket/
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ### PROJECT-ROCKET | *Homepage* |
-![Image of homepage](/images/rocketp.jpg)
+![Image of homepage](/assets/images/rocketp.jpg)
